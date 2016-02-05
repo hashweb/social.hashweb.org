@@ -1,0 +1,5 @@
+node_modules
+.DS_Store
+__src
+gulpfile.js
+package.json
