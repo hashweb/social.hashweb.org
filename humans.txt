@@ -1,0 +1,45 @@
+          _ _,---._ 
+       ,-','       `-.___ 
+      /-;'               `._ 
+     /\/          ._   _,'o \ 
+    ( /\       _,--'\,','"`. ) 
+     |\      ,'o     \'    //\ 
+     |      \        /   ,--'""`-. 
+     :       \_    _/ ,-'         `-._ 
+      \        `--'  /                ) 
+       `.  \`._    ,'     ________,',' 
+         .--`     ,'  ,--` __\___,;' 
+          \`.,-- ,' ,`_)--'  /`.,' 
+           \( ;  | | )      (`-/ 
+             `--'| |)       |-/ 
+               | | |        | | 
+               | | |,.,-.   | |_ 
+               | `./ /   )---`  ) 
+              _|  /    ,',   ,-' 
+  - Coding - ,'|_(    /-<._,' |--, 
+             |    `--'---.     \/ \ 
+             |          / \    /\  \ 
+           ,-^---._     |  \  /  \  \ 
+        ,-'        \----'   \/    \--`. 
+       /            \              \   \ 
+
+/* MAIN */
+  Develop & Main Design: Martin Bratteng
+  Twitter: @MartinBratteng
+  Site: http://www.bratteng.me/
+
+/* SITE */
+  Last update:  05/02/2016
+  Doctype:      HTML5
+  Editor:       Sublime Text 3
+  Tools:        Gulp
+
+
+/* SPECIAL THANKS */
+  Support:      Jacques Probets
+  Twitter:      @jacquesprobets
+
+  Support:      #web-social
+
+  Music:        Spotify
+  Server:       Datashack
