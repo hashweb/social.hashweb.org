@@ -118,11 +118,21 @@ main {
       font-style: normal;
       font-weight: 500; }
     main figure svg {
+      height: 24px;
       padding-left: 5px;
       position: relative;
-      top: 4px; }
+      top: 4px;
+      width: 24px; }
     main figure p {
       padding: 0; }
+    main figure .daemon {
+      clip-rule: evenodd;
+      fill-rule: evenodd;
+      stroke-linejoin: round;
+      stroke-miterlimit: 1.41421; }
+      main figure .daemon path {
+        fill: #f64636;
+        fill-rule: nonzero; }
     main figure:first-child, main figure:nth-child(5n+1) {
       margin-left: 0; }
     main figure:last-child, main figure:nth-child(5n) {
