@@ -3,3 +3,4 @@ node_modules
 __src
 gulpfile.js
 package.json
+*.conf
