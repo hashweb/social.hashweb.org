@@ -104,17 +104,17 @@ main {
     margin: 0;
     padding: 0;
     box-shadow: 0 4px 7px rgba(0, 0, 0, 0.23), 0 8px 25px rgba(0, 0, 0, 0.05);
-    margin: 0 20px 40px;
+    margin: 0 10px 40px;
     padding: 5px;
-    width: -moz-calc(20% - 40px);
-    width: calc(20% - 40px); }
+    width: -moz-calc(25% - 20px);
+    width: calc(25% - 20px); }
     main figure a {
       color: #673ab7; }
     main figure img {
       max-width: 100%; }
     main figure strong {
       font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-style: normal;
       font-weight: 500; }
     main figure svg {
@@ -133,9 +133,15 @@ main {
       main figure .daemon path {
         fill: #f64636;
         fill-rule: nonzero; }
-    main figure:first-child, main figure:nth-child(5n+1) {
-      margin-left: 0; }
-    main figure:last-child, main figure:nth-child(5n) {
-      margin-right: 0; }
+
+@media screen and (max-width: 768px) {
+  main figure {
+    width: -moz-calc(33% - 20px);
+    width: calc(33% - 20px); } }
+
+@media screen and (max-width: 550px) {
+  main figure {
+    width: -moz-calc(50% - 20px);
+    width: calc(50% - 20px); } }
 
 /*# sourceMappingURL=screen.css.map */
