@@ -4,3 +4,4 @@ __src
 gulpfile.js
 package.json
 *.conf
+sftp-config.json
