@@ -1,48 +1,36 @@
-          _ _,---._ 
-       ,-','       `-.___ 
-      /-;'               `._ 
-     /\/          ._   _,'o \ 
-    ( /\       _,--'\,','"`. ) 
-     |\      ,'o     \'    //\ 
-     |      \        /   ,--'""`-. 
-     :       \_    _/ ,-'         `-._ 
-      \        `--'  /                ) 
-       `.  \`._    ,'     ________,',' 
-         .--`     ,'  ,--` __\___,;' 
-          \`.,-- ,' ,`_)--'  /`.,' 
-           \( ;  | | )      (`-/ 
-             `--'| |)       |-/ 
-               | | |        | | 
-               | | |,.,-.   | |_ 
-               | `./ /   )---`  ) 
-              _|  /    ,',   ,-' 
-  - Coding - ,'|_(    /-<._,' |--, 
-             |    `--'---.     \/ \ 
-             |          / \    /\  \ 
-           ,-^---._     |  \  /  \  \ 
-        ,-'        \----'   \/    \--`. 
-       /            \              \   \ 
+          _ _,---._
+       ,-','       `-.___
+      /-;'               `._
+     /\/          ._   _,'o \
+    ( /\       _,--'\,','"`. )
+     |\      ,'o     \'    //\
+     |      \        /   ,--'""`-.
+     :       \_    _/ ,-'         `-._
+      \        `--'  /                )
+       `.  \`._    ,'     ________,','
+         .--`     ,'  ,--` __\___,;'
+          \`.,-- ,' ,`_)--'  /`.,'
+           \( ;  | | )      (`-/
+             `--'| |)       |-/
+               | | |        | |
+               | | |,.,-.   | |_
+               | `./ /   )---`  )
+              _|  /    ,',   ,-'
+  - Coding - ,'|_(    /-<._,' |--,
+             |    `--'---.     \/ \
+             |          / \    /\  \
+           ,-^---._     |  \  /  \  \
+        ,-'        \----'   \/    \--`.
+       /            \              \   \
 
 /* REPO */
-  https://github.com/tnViking/web-social
+	https://github.com/omBratteng/web-social
 
 /* MAIN */
-  Develop & Main Design: Martin Bratteng
-  Twitter: @MartinBratteng
-  Site: http://www.bratteng.me/
+	Author
+	Twitter: @omBratteng
+	Site: https://bratteng.solutions/
 
 /* SITE */
-  Last update:  22/06/2016
-  Doctype:      HTML5
-  Editor:       Sublime Text 3
-  Tools:        Gulp
-
-
-/* SPECIAL THANKS */
-  Support:      Jacques Probets
-  Twitter:      @jacquesprobets
-
-  Support:      #web-social
-
-  Music:        Spotify
-  Server:       Scaleway
+	Last update:  12/06/2019
+	Support:      #web-social
