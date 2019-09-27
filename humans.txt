@@ -32,5 +32,5 @@
 	Site: https://bratteng.solutions/
 
 /* SITE */
-	Last update:  28/06/2019
+	Last update:  27/09/2019
 	Support:      #web-social
