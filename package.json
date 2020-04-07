@@ -9,7 +9,7 @@
 		"url": "git+https://github.com/omBratteng/web-social.git"
 	},
 	"author": "Ole-Martin Bratteng",
-	"license": "ISC",
+	"license": "BSD-3-Clause",
 	"bugs": {
 		"url": "https://github.com/omBratteng/web-social/issues"
 	},
