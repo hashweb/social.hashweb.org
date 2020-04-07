@@ -1,0 +1,18 @@
+version: "3.7"
+
+networks:
+  traefik:
+    external: true
+
+services:
+  nginx:
+    build: ./.docker/nginx/
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.social-hashweb-org.rule=Host(`social.hashweb.org`) || Host(`social.hashweb.dev`)
+      - traefik.http.routers.social-hashweb-org.entrypoints=https
+      - traefik.http.routers.social-hashweb-org.tls=true
+    volumes:
+      - ./:/var/www/html:ro
+    networks:
+      - traefik
