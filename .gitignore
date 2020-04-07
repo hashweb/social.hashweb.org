@@ -1,16 +1,6 @@
 
-# Created by https://www.gitignore.io/api/node,macos,sublimetext,composer,git,vim,visualstudiocode,docker,go
-# Edit at https://www.gitignore.io/?templates=node,macos,sublimetext,composer,git,vim,visualstudiocode,docker,go
-
-### Composer ###
-composer.phar
-/vendor/
-
-# Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
-# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
-# composer.lock
-
-#!! ERROR: docker is undefined. Use list command to see defined gitignore types !!#
+# Created by https://www.gitignore.io/api/git,vim,node,macos,windows,sublimetext,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=git,vim,node,macos,windows,sublimetext,visualstudiocode
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -26,26 +16,6 @@ composer.phar
 *_BASE_*.txt
 *_LOCAL_*.txt
 *_REMOTE_*.txt
-
-### Go ###
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
-
-# Test binary, built with `go test -c`
-*.test
-
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
-
-# Dependency directories (remove the comment below to include it)
-# vendor/
-
-### Go Patch ###
-/Godeps/
 
 ### macOS ###
 # General
@@ -153,6 +123,18 @@ typings/
 # nuxt.js build output
 .nuxt
 
+# rollup.js default build output
+dist/
+
+# Uncomment the public line if your project uses Gatsby
+# https://nextjs.org/blog/next-9-1#public-directory-support
+# https://create-react-app.dev/docs/using-the-public-folder/#docsNav
+# public
+
+# Storybook build outputs
+.out
+.storybook-out
+
 # vuepress build output
 .vuepress/dist
 
@@ -164,6 +146,10 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+# Temporary folders
+tmp/
+temp/
 
 ### SublimeText ###
 # Cache files for Sublime Text
@@ -212,10 +198,15 @@ Sessionx.vim
 # Temporary
 .netrwhist
 *~
+
 # Auto-generated tag files
 tags
+
 # Persistent undo
 [._]*.un~
+
+# Coc configuration directory
+.vim
 
 ### VisualStudioCode ###
 .vscode/*
@@ -228,4 +219,30 @@ tags
 # Ignore all local history of files
 .history
 
-# End of https://www.gitignore.io/api/node,macos,sublimetext,composer,git,vim,visualstudiocode,docker,go
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.gitignore.io/api/git,vim,node,macos,windows,sublimetext,visualstudiocode
