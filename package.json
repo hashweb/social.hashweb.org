@@ -2,17 +2,22 @@
 	"name": "social.hashweb.org",
 	"version": "1.0.0",
 	"description": "Hall of (f/sh)ame & Majestic beards",
-	"main": "index.js",
-	"scripts": {},
+	"homepage": "https://social.hashweb.org",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/omBratteng/web-social.git"
 	},
-	"author": "Ole-Martin Bratteng",
+	"author": {
+		"name": "Ole-Martin Bratteng",
+		"email": "ole-martin@bratteng.solutions",
+		"url": "https://bratteng.solutions"
+	},
 	"license": "BSD-3-Clause",
 	"bugs": {
 		"url": "https://github.com/omBratteng/web-social/issues"
 	},
-	"private": true,
-	"homepage": "https://github.com/omBratteng/web-social#readme"
+	"browserslist": [
+		"> 0.2%"
+	],
+	"private": true
 }
