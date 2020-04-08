@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	:root {
-		font-family: "Roboto", "Helvetica Neue", Helvetica, sans-serif;
+		font-family: 'Inconsolata', monospace;
 		font-size: 1rem;
 		font-style: normal;
 		font-weight: 400;
@@ -29,41 +29,5 @@ export const GlobalStyle = createGlobalStyle`
 		-webkit-text-size-adjust: 100%;
 		-ms-text-size-adjust: 100%;
 		text-size-adjust: 100%;
-	}
-
-	body {
-		font-size: ${(props) => props.theme.font.size.base};
-		line-height: ${(props) => props.theme.spacing.line_height};
-		font-family: 'Source Sans Pro', sans-serif;
-		font-style: normal;
-	}
-	a:link {
-		${'' /* color: ${(props) => props.theme.colors.primary}; */}
-		text-decoration: none;
-	}
-
-	p {
-		font-size: ${(props) => props.theme.font.size.base};
-	}
-
-	h1, h2, h3, h4, h5 {
-		${'' /* color: ${(props) => props.theme.colors.darkbluishgrey}; */}
-		font-weight: ${(props) => props.theme.font.weight.bold};
-	}
-
-	h1 {
-		font-size: 1.375rem;
-	}
-
-	h2 {
-		font-size: 1.25rem;
-	}
-
-	h3 {
-		font-size: 1.125rem;
-	}
-
-	h4 {
-		font-size: 1rem;
 	}
 `
