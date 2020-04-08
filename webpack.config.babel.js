@@ -1,14 +1,15 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const TerserJsPlugin = require('terser-webpack-plugin')
-const path = require('path')
-const pkg = require('./package.json')
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+import BrowserSyncPlugin from 'browser-sync-webpack-plugin'
+import { CleanWebpackPlugin } from 'clean-webpack-plugin'
+import TerserJsPlugin from 'terser-webpack-plugin'
+import path from 'path'
+import pkg from './package.json'
 
+const __dirname = path.resolve()
 const replaceTLD = (domain) =>
 	domain.split('.').slice(0, -1).concat('dev').join('.')
 
-module.exports = (env, argv) => {
+export default (env, argv) => {
 	const devMode = argv.mode === 'development'
 
 	return {
