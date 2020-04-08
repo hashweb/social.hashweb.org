@@ -17,13 +17,11 @@ const Title = styled.h1`
 	text-align: center;
 `
 
-const Header = ({ title }) => {
-	return (
-		<StyledHeader>
-			<Title>{title}</Title>
-		</StyledHeader>
-	)
-}
+const Header = ({ title }) => (
+	<StyledHeader>
+		<Title>{title}</Title>
+	</StyledHeader>
+)
 
 Header.propTypes = {
 	title: PropTypes.string.isRequired,
