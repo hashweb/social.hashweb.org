@@ -60,6 +60,23 @@ export default (env, argv) => {
 						},
 					},
 				},
+				{
+					test: /\.(png|jpg|gif)$/i,
+					loader: 'file-loader',
+					options: {
+						outputPath: (url, resourcePath) => {
+							if (/assets\/avatars/.test(resourcePath)) {
+								return `assets/static/avatars/${url}`
+							}
+
+							return `assets/static/${url}`
+						},
+						name: () =>
+							argv.mode === 'development'
+								? '[name].[ext]'
+								: '[contenthash].[ext]',
+					},
+				},
 			],
 		},
 		plugins: [
