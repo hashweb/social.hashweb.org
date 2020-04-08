@@ -1,5 +1,4 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const TerserJsPlugin = require('terser-webpack-plugin')
@@ -76,9 +75,6 @@ module.exports = (env, argv) => {
 				hash: true,
 				cache: false,
 				dev: devMode,
-			}),
-			new MiniCssExtractPlugin({
-				filename: 'assets/main.css',
 			}),
 			new BrowserSyncPlugin({
 				host: 'localhost',
