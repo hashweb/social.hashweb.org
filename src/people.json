@@ -1,0 +1,236 @@
+[
+    {
+        "name": "Vikingr",
+        "description": "True heir of King Harald III of Norway, a true Viking.",
+        "website": "https://bratteng.solutions/",
+        "image": "Vikingr.jpg"
+    },
+    {
+        "name": "Linux Debian Buster",
+        "description": "purr purr",
+        "website": false,
+        "image": "linux_debian_buster.jpg"
+    },
+    {
+        "name": "daemon",
+        "description": "привет, я люблю водку.",
+        "website": false,
+        "image": "russian_daemon.jpg"
+    },
+    {
+        "name": "emerson",
+        "description": "<--- I'm with stupids --->",
+        "website": false,
+        "image": "emerson.jpg"
+    },
+    {
+        "name": "gwurr3",
+        "description": "I got hatz",
+        "website": false,
+        "image": "gwurr3.jpg"
+    },
+    {
+        "name": "anna`",
+        "description": "fdisk",
+        "website": false,
+        "image": "anna.jpg"
+    },
+    {
+        "name": "fran__",
+        "description": "<!-- no comment -->",
+        "website": false,
+        "image": "fran__.jpg"
+    },
+    {
+        "name": "Natasha",
+        "description": "Our beloved Natasha",
+        "website": false,
+        "image": "Natasha.jpg"
+    },
+    {
+        "name": "Ella",
+        "description": "Our beloved Ella",
+        "website": false,
+        "image": "Ella.jpg"
+    },
+    {
+        "name": "Jayflux",
+        "description": "Boss 😎",
+        "website": false,
+        "image": "Jayflux.jpg"
+    },
+    {
+        "name": "Buck",
+        "description": "My name is Buck and I like to code",
+        "website": false,
+        "image": "Buck.jpg"
+    },
+    {
+        "name": "Nomikos",
+        "description": "Who took the cork out of my lunch?",
+        "website": false,
+        "image": "Nomikos.jpg"
+    },
+    {
+        "name": "TheHackOps",
+        "description": "No Buck you dont code, My name is +TheHackOps and I like to code",
+        "website": false,
+        "image": "TheHackOps.jpg"
+    },
+    {
+        "name": "pokk",
+        "description": "sounds like a #web question",
+        "website": false,
+        "image": "anon.jpg"
+    },
+    {
+        "name": "MJCD",
+        "description": "[14:53:13] MJCD: Dazzling_Viking, NOT AGAIN",
+        "website": false,
+        "image": "MJCD.jpg"
+    },
+    {
+        "name": "notchris",
+        "description": "Birds aren't real",
+        "website": false,
+        "image": "notchris.jpg"
+    },
+    {
+        "name": "ThePendulum",
+        "description": "It isn't half arsed, it's half decent",
+        "website": false,
+        "image": "ThePendulum.jpg"
+    },
+    {
+        "name": "vuur",
+        "description": "Fantastic Mr. Fox",
+        "website": false,
+        "image": "vuur.jpg"
+    },
+    {
+        "name": "skalnik",
+        "description": "Howdy",
+        "website": false,
+        "image": "skalnik.jpg"
+    },
+    {
+        "name": "theskillwithin",
+        "description": "There is no spoon",
+        "website": "http://austinpeterson.info/",
+        "image": "theskillwithin.jpg"
+    },
+    {
+        "name": "ko_lo",
+        "description": "meow?",
+        "website": false,
+        "image": "ko_lo.jpg"
+    },
+    {
+        "name": "ChainsawBaby",
+        "description": "Chainsaw sounds",
+        "website": "https://chainsaw.website/",
+        "image": "ChainsawBaby.jpg"
+    },
+    {
+        "name": "stoned",
+        "description": "Hey love",
+        "website": false,
+        "image": "stoned.jpg"
+    },
+    {
+        "name": "jerit",
+        "description": "leeeeeeeroy jerit!",
+        "website": false,
+        "image": "jerit.jpg"
+    },
+    {
+        "name": "spinningcat",
+        "description": "spinningcat is another way of sayin fuckyeah",
+        "website": false,
+        "image": "spinningcat.jpg"
+    },
+    {
+        "name": "Kartagis",
+        "description": "uid",
+        "website": false,
+        "image": "Kartagis.jpg"
+    },
+    {
+        "name": "madprops",
+        "description": "Tryna get a handbeezy",
+        "website": false,
+        "image": "madprops.jpg"
+    },
+    {
+        "name": "passwordN",
+        "description": "Just because you're unique doesn't make you useful",
+        "website": false,
+        "image": "password2.jpg"
+    },
+    {
+        "name": "gitesh",
+        "description": "Drinking tea is meditation",
+        "website": false,
+        "image": "gitesh.jpg"
+    },
+    {
+        "name": "cannap",
+        "description": "hopp schwiiz",
+        "website": "https://www.livecoding.tv/cannap",
+        "image": "cannap.jpg"
+    },
+    {
+        "name": "VLMC",
+        "description": "That's the power of Home Depot.",
+        "website": false,
+        "image": "VLMC.jpg"
+    },
+    {
+        "name": "sol1d",
+        "description": "Quite solid.",
+        "website": false,
+        "image": "sol1d.jpg"
+    },
+    {
+        "name": "Pingu",
+        "description": "Noot noot",
+        "website": false,
+        "image": "Pingu.jpg"
+    },
+    {
+        "name": "DeltaHeavy",
+        "description": "Do u evn babel‽",
+        "website": false,
+        "image": "DeltaHeavy.jpg"
+    },
+    {
+        "name": "faylite",
+        "description": "Employers love stock photos",
+        "website": false,
+        "image": "faylite.jpg"
+    },
+    {
+        "name": "bango2",
+        "description": "The quieter you become, the more you are able to hear",
+        "website": false,
+        "image": "bango2.jpg"
+    },
+    {
+        "name": "thykka",
+        "description": "HACK THE PLANET!!!",
+        "website": false,
+        "image": "thykka.jpg"
+    },
+    {
+        "name": "rhelic",
+        "description": "I don't know how to do PR's, so Vikingr has to do it for me",
+        "website": false,
+        "image": "rhelic.jpg"
+    },
+    {
+        "name": "MassDebates",
+        "description": "shit wait, I don't have any pictures of myself. I forgot about that part sorry.",
+        "website": false,
+        "image": "MassDebates.jpg"
+    }
+]
