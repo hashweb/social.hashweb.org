@@ -22,7 +22,7 @@ const Name = styled.p`
 const Avatar = ({ name, image, website, description }) => {
 	return (
 		<Figure>
-			<Image src={`/avatars/${image}`} />
+			<Image src={`/avatars/${image}`} alt={name} />
 			<Name>
 				<strong>{name}</strong>
 				{website && <WebsiteIcon url={website} />}
