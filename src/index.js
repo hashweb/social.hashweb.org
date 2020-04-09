@@ -11,7 +11,7 @@ render(
 		<GlobalStyle />
 		<Helmet>
 			<link
-				href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap"
+				href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap"
 				rel="stylesheet"
 			/>
 		</Helmet>
