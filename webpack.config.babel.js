@@ -83,6 +83,8 @@ export default (env, argv) => {
 			new CleanWebpackPlugin({
 				cleanOnceBeforeBuildPatterns: [
 					'**/*',
+					'!avatars*',
+					'!avatars/*.*',
 					'!.gitignore',
 					'!favicon.ico',
 				],
