@@ -24,7 +24,6 @@ export const GlobalStyle = createGlobalStyle`
 		font-smoothing: antialiased;
 		line-height: 1.5;
 		-ms-overflow-style: -ms-autohiding-scrollbar;
-		overflow-y: scroll;
 		text-rendering: optimizeLegibility;
 		-webkit-text-size-adjust: 100%;
 		-ms-text-size-adjust: 100%;

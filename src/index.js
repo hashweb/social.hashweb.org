@@ -2,19 +2,9 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Helmet } from 'react-helmet'
 import { ThemeProvider } from 'styled-components'
-import { Router, Route, Switch } from 'wouter'
 
-import { defaultTheme, GlobalStyle } from './styles'
-import routes from './routes'
-
-const RouteWithSubRoute = (route) => (
-	<Route
-		path={route.path}
-		component={(props) => (
-			<route.component {...props} routes={route.routes} />
-		)}
-	></Route>
-)
+import { defaultTheme, GlobalStyle } from 'styles'
+import App from 'components/App'
 
 render(
 	<ThemeProvider theme={defaultTheme}>
@@ -25,13 +15,7 @@ render(
 				rel="stylesheet"
 			/>
 		</Helmet>
-		<Router>
-			<Switch>
-				{routes.map((route, i) => (
-					<RouteWithSubRoute key={i} {...route} />
-				))}
-			</Switch>
-		</Router>
+		<App />
 	</ThemeProvider>,
 	document.getElementById('root'),
 )

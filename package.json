@@ -31,8 +31,7 @@
 		"react": "^16.13.0",
 		"react-dom": "^16.13.0",
 		"react-helmet": "6.0.0-beta.2",
-		"styled-components": "^5.1.0",
-		"wouter": "^2.4.0"
+		"styled-components": "^5.1.0"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.8.6",
