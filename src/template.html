@@ -8,11 +8,27 @@
 
 		<title>#web-social Hall of (f/sh)ame</title>
 
-		<link rel="preconnect"href="https://fonts.googleapis.com">
-		<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet" />
+		<link rel="preconnect"href="https://cdn.jsdelivr.net" />
+		<link rel="preconnect"href="https://fonts.googleapis.com" />
 	</head>
 	<body>
 		<div id="root"></div>
+
+		<script type="text/javascript">
+			WebFontConfig = {
+				google: { families: [ 'Fira+Code:400,600' ] }
+			};
+			(function() {
+				var wf = document.createElement('script');
+				wf.src = 'https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js';
+				wf.type = 'text/javascript';
+				wf.async = 'true';
+				wf.integrity = 'sha256-4O4pS1SH31ZqrSO2A/2QJTVjTPqVe+jnYgOWUVr7EEc='
+				wf.crossOrigin = 'anonymous'
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(wf, s);
+			})();
+		</script>
 		<!-- Generated JS -->
 	</body>
 </html>

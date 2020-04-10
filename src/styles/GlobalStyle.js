@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	:root {
-		font-family: 'Inconsolata', monospace;
+		font-family: 'Fira Code', monospace;
 		font-size: 1rem;
 		font-style: normal;
 		font-weight: 400;
