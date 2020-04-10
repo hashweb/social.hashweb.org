@@ -57,17 +57,22 @@ const Avatar = ({ name, image, crown, website, description }) => {
 			<Caption>
 				<Name>{name}</Name>
 
-				<Icons>
-					{website && (
-						<WebsiteIcon
-							icon={['fad', 'link']}
-							onClick={openWebsite}
-						/>
-					)}
-					{crown && (
-						<FontAwesomeIcon icon={['fad', 'crown']} color="gold" />
-					)}
-				</Icons>
+				{(website || crown) && (
+					<Icons>
+						{website && (
+							<WebsiteIcon
+								icon={['fad', 'link']}
+								onClick={openWebsite}
+							/>
+						)}
+						{crown && (
+							<FontAwesomeIcon
+								icon={['fad', 'crown']}
+								color="gold"
+							/>
+						)}
+					</Icons>
+				)}
 				<Description>{description}</Description>
 			</Caption>
 		</Figure>
