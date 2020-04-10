@@ -61,7 +61,6 @@
 		"file-loader": "^6.0.0",
 		"html-webpack-plugin": "^4.0.4",
 		"prettier": "^2.0.4",
-		"styled-normalize": "^8.0.7",
 		"terser-webpack-plugin": "^2.3.5",
 		"webpack": "^4.41.6",
 		"webpack-cli": "^3.3.11"
