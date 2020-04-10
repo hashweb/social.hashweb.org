@@ -897,6 +897,13 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.28"
 
+"@fortawesome/free-brands-svg-icons@^5.13.0":
+  version "5.13.0"
+  resolved "https://npm.fontawesome.com/@fortawesome/free-brands-svg-icons/-/5.13.0/free-brands-svg-icons-5.13.0.tgz#e79de73ba6555055204828dca9c0691e7ce5242b"
+  integrity sha512-/6xXiJFCMEQxqxXbL0FPJpwq5Cv6MRrjsbJEmH/t5vOvB4dILDpnY0f7zZSlA8+TG7jwlt12miF/yZpZkykucA==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.28"
+
 "@fortawesome/pro-duotone-svg-icons@^5.13.0":
   version "5.13.0"
   resolved "https://npm.fontawesome.com/@fortawesome/pro-duotone-svg-icons/-/5.13.0/pro-duotone-svg-icons-5.13.0.tgz#d37942a4ad814da0b286f33d0115cd7d584662a8"
