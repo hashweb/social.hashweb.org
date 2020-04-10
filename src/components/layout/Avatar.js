@@ -7,25 +7,27 @@ const Figure = styled.figure`
 	margin: 0;
 	padding: 0;
 	box-shadow: 0 4px 7px rgba(0, 0, 0, 0.23), 0 8px 25px rgba(0, 0, 0, 0.05);
-	padding: 5px;
 `
 
 const Caption = styled.figcaption`
 	align-items: center;
 	display: flex;
 	flex-wrap: wrap;
+	padding: 0.75rem 1rem 0.5rem;
 `
 
 const Image = styled.img`
 	max-width: 100%;
+	vertical-align: middle;
 `
 
 const Name = styled.p`
 	font-size: 1.2rem;
-	font-weight: bold;
+	font-weight: 600;
 `
 
 const Description = styled.p`
+	margin-top: 0.5rem;
 	width: 100%;
 `
 
