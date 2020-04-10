@@ -9,7 +9,7 @@ services:
     build: ./.docker/nginx/
     labels:
       - traefik.enable=true
-      - traefik.http.routers.social-hashweb-org.rule=Host(`social.hashweb.org`) || Host(`social.hashweb.dev`)
+      - traefik.http.routers.social-hashweb-org.rule=Host(`social.hashweb.org`) || Host(`social.hashweb.dev`) || Host(`socialhashweborg.viking.sh`)
       - traefik.http.routers.social-hashweb-org.entrypoints=https
       - traefik.http.routers.social-hashweb-org.tls=true
     volumes:
