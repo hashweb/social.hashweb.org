@@ -14,7 +14,7 @@ export default (env, argv) => {
 
 	return {
 		entry: ['babel-polyfill', './src/index.js'],
-		devtool: devMode ? 'inline-source-map' : false,
+		devtool: devMode ? 'source-map' : false,
 		output: {
 			path: path.resolve(__dirname, 'public'),
 			publicPath: '/',
