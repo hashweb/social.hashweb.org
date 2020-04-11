@@ -4,7 +4,7 @@
 	"description": "Hall of (f/sh)ame & Majestic beards",
 	"homepage": "https://social.hashweb.org",
 	"scripts": {
-		"start": "webpack --watch --mode=development",
+		"start": "webpack-dev-server --mode=development",
 		"build": "webpack --mode=development",
 		"compile": "webpack --mode=production"
 	},
@@ -63,6 +63,7 @@
 		"prettier": "^2.0.4",
 		"terser-webpack-plugin": "^2.3.5",
 		"webpack": "^4.41.6",
-		"webpack-cli": "^3.3.11"
+		"webpack-cli": "^3.3.11",
+		"webpack-dev-server": "^3.10.3"
 	}
 }

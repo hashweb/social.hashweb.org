@@ -1,30 +1,33 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin'
-import BrowserSyncPlugin from 'browser-sync-webpack-plugin'
 import { CleanWebpackPlugin } from 'clean-webpack-plugin'
 import TerserJsPlugin from 'terser-webpack-plugin'
 import path from 'path'
-import pkg from './package.json'
 
 const __dirname = path.resolve()
-const replaceTLD = (domain) =>
-	domain.split('.').slice(0, -1).concat('dev').join('.')
 
 export default (env, argv) => {
 	const devMode = argv.mode === 'development'
 
 	return {
 		entry: ['babel-polyfill', './src/index.js'],
-		devtool: devMode ? 'source-map' : false,
+		devtool: devMode ? 'inline-source-map' : false,
 		output: {
 			path: path.resolve(__dirname, 'public'),
 			publicPath: '/',
-			filename: devMode
-				? 'assets/bundle.[chunkhash:8].js'
-				: 'assets/bundle.js',
+			filename: devMode ? 'assets/bundle.[hash].js' : 'assets/bundle.js',
 			chunkFilename: devMode
-				? 'assets/[name].[chunkhash:8].js'
+				? 'assets/[name].[hash].js'
 				: 'assets/[name].js',
 			crossOriginLoading: 'anonymous',
+		},
+		devServer: {
+			contentBase: path.join(__dirname, 'public'),
+			hot: true,
+			port: 3000,
+			https: {
+				key: './.docker/localhost.key',
+				cert: './.docker/localhost.crt',
+			},
 		},
 		optimization: {
 			splitChunks: {
@@ -95,17 +98,6 @@ export default (env, argv) => {
 				hash: true,
 				cache: false,
 				dev: devMode,
-			}),
-			new BrowserSyncPlugin({
-				host: 'localhost',
-				port: 3000,
-				proxy: replaceTLD(pkg.homepage),
-				files: ['src/**/*', '!app/**/*.php', '!app/storage/**/*'],
-				open: false,
-				https: {
-					key: './.docker/localhost.key',
-					cert: './.docker/localhost.crt',
-				},
 			}),
 		],
 
