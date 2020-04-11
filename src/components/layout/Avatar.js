@@ -16,9 +16,11 @@ const Caption = styled.figcaption`
 	padding: 0.75rem 1rem 0.5rem;
 `
 
-const Image = styled.img`
-	max-width: 100%;
-	vertical-align: middle;
+const Image = styled.picture`
+	img {
+		max-width: 100%;
+		vertical-align: middle;
+	}
 `
 
 const Name = styled.p`
@@ -54,7 +56,13 @@ const Avatar = ({ name, image, crown, website, description }) => {
 
 	return (
 		<Figure>
-			<Image src={`/avatars/${image}`} alt={name} />
+			<Image>
+				<source
+					srcSet={`/avatars/${image.replace('jpg', 'webp')}`}
+					type="image/webp"
+				/>
+				<img src={`/avatars/${image}`} alt={name} />
+			</Image>
 
 			<Caption>
 				<Name>{name}</Name>
