@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import media from 'css-in-js-media'
 
 import Header from 'components/layout/Header'
-import Footer from 'components/layout/Footer'
 import Avatar from 'components/layout/Avatar'
 
 const Main = styled.main`
@@ -36,7 +35,6 @@ const App = () => {
 					return <Avatar key={key} {...person} />
 				})}
 			</Main>
-			<Footer />
 		</>
 	)
 }
