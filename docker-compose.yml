@@ -16,3 +16,5 @@ services:
       - ./:/var/www/html:ro
     networks:
       - traefik
+    environment:
+      - STATELESS_ACME_CHALLENGE
