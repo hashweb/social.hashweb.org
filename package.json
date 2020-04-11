@@ -1,18 +1,70 @@
 {
-  "name": "social.hashweb.org",
-  "version": "1.0.0",
-  "description": "Hall of (f/sh)ame & Majestic beards",
-  "main": "index.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/omBratteng/web-social.git"
-  },
-  "author": "Ole-Martin Bratteng",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/omBratteng/web-social/issues"
-  },
-  "private": true,
-  "homepage": "https://github.com/omBratteng/web-social#readme"
+	"name": "social.hashweb.org",
+	"version": "1.0.0",
+	"description": "Hall of (f/sh)ame & Majestic beards",
+	"homepage": "https://social.hashweb.org",
+	"scripts": {
+		"start": "webpack-dev-server --mode=development",
+		"build": "webpack --mode=development",
+		"compile": "webpack --mode=production"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/omBratteng/web-social.git"
+	},
+	"author": {
+		"name": "Ole-Martin Bratteng",
+		"email": "ole-martin@bratteng.solutions",
+		"url": "https://bratteng.solutions"
+	},
+	"license": "BSD-3-Clause",
+	"bugs": {
+		"url": "https://github.com/omBratteng/web-social/issues"
+	},
+	"browserslist": [
+		"> 0.2%"
+	],
+	"private": true,
+	"dependencies": {
+		"@babel/runtime": "^7.8.4",
+		"@fortawesome/fontawesome-svg-core": "^1.2.28",
+		"@fortawesome/free-brands-svg-icons": "^5.13.0",
+		"@fortawesome/pro-duotone-svg-icons": "^5.13.0",
+		"@fortawesome/pro-light-svg-icons": "^5.13.0",
+		"@fortawesome/pro-regular-svg-icons": "^5.13.0",
+		"@fortawesome/pro-solid-svg-icons": "^5.13.0",
+		"@fortawesome/react-fontawesome": "^0.1.9",
+		"css-in-js-media": "^1.0.11",
+		"prop-types": "^15.7.2",
+		"react": "^16.13.0",
+		"react-dom": "^16.13.0",
+		"react-helmet": "6.0.0",
+		"styled-components": "^5.1.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.8.6",
+		"@babel/preset-env": "^7.9.5",
+		"@babel/preset-react": "^7.8.3",
+		"@babel/register": "^7.9.0",
+		"babel-eslint": "^10.1.0",
+		"babel-loader": "^8.0.6",
+		"babel-plugin-module-resolver": "^4.0.0",
+		"babel-plugin-react-remove-properties": "^0.3.0",
+		"babel-plugin-styled-components": "^1.10.7",
+		"babel-polyfill": "^6.26.0",
+		"browser-sync": "^2.26.7",
+		"browser-sync-webpack-plugin": "^2.2.2",
+		"clean-webpack-plugin": "^3.0.0",
+		"eslint": "^6.8.0",
+		"eslint-config-prettier": "^6.10.0",
+		"eslint-plugin-prettier": "^3.1.2",
+		"eslint-plugin-react": "^7.18.3",
+		"file-loader": "^6.0.0",
+		"html-webpack-plugin": "^4.2.0",
+		"prettier": "^2.0.4",
+		"terser-webpack-plugin": "^2.3.5",
+		"webpack": "^4.41.6",
+		"webpack-cli": "^3.3.11",
+		"webpack-dev-server": "^3.10.3"
+	}
 }
