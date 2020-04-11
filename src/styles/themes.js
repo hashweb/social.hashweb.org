@@ -28,9 +28,4 @@ export const defaultTheme = {
 		button_sm: '30px',
 		button_md: '36px',
 	},
-	breakpoints: {
-		mobile: '480px',
-		tablet: '768px',
-		laptop: '1200px',
-	},
 }

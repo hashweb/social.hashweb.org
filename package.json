@@ -34,6 +34,7 @@
 		"@fortawesome/pro-regular-svg-icons": "^5.13.0",
 		"@fortawesome/pro-solid-svg-icons": "^5.13.0",
 		"@fortawesome/react-fontawesome": "^0.1.9",
+		"css-in-js-media": "^1.0.11",
 		"prop-types": "^15.7.2",
 		"react": "^16.13.0",
 		"react-dom": "^16.13.0",
