@@ -9,7 +9,7 @@ export default (env, argv) => {
 	const devMode = argv.mode === 'development'
 
 	return {
-		entry: ['babel-polyfill', './src/index.js'],
+		entry: ['./src/index.js'],
 		devtool: devMode ? 'inline-source-map' : false,
 		output: {
 			path: path.resolve(__dirname, 'public'),
