@@ -14,10 +14,12 @@ export default (env, argv) => {
 		output: {
 			path: path.resolve(__dirname, 'public'),
 			publicPath: '/',
-			filename: devMode ? 'assets/bundle.[hash].js' : 'assets/bundle.js',
+			filename: devMode
+				? 'assets/bundle.[hash].js'
+				: 'assets/bundle.min.js',
 			chunkFilename: devMode
 				? 'assets/[name].[hash].js'
-				: 'assets/[name].js',
+				: 'assets/[name].min.js',
 			crossOriginLoading: 'anonymous',
 		},
 		devServer: {
@@ -65,6 +67,7 @@ export default (env, argv) => {
 				},
 				{
 					test: /\.(png|jpg|gif)$/i,
+					exclude: /node_modules/,
 					loader: 'file-loader',
 					options: {
 						outputPath: (url, resourcePath) => {

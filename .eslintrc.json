@@ -25,7 +25,11 @@
         "react": {
             "version": "detect"
         }
-    },
+	},
+	"ignorePatterns": [
+		"build/",
+		"**/*.min.*"
+	],
     "rules": {
         "prettier/prettier": ["error", {
             "semi": false,
