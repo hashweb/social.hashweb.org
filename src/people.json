@@ -140,13 +140,6 @@
         "image": "ko_lo.jpg"
     },
     {
-        "name": "ChainsawBaby",
-        "description": "Chainsaw sounds",
-        "website": "https://chainsaw.website/",
-		"crown": false,
-        "image": "ChainsawBaby.jpg"
-    },
-    {
         "name": "stoned",
         "description": "Hey love",
         "website": false,
