@@ -257,5 +257,12 @@
         "website": false,
 		"crown": false,
         "image": "MassDebates.jpg"
-    }
+	},
+	{
+		"name": "Vikingr's stripper",
+		"description": "I stripped at Vikingr's 18th birthday.",
+        "website": "http://i.viking.sh/18-stripper/",
+		"crown": false,
+        "image": "stripper.jpg"
+	}
 ]
