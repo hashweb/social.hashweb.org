@@ -155,7 +155,7 @@
     },
     {
         "name": "spinningcat",
-        "description": "spinningcat is another way of sayin fuckyeah",
+        "description": "spinningCat -> spins all around",
         "website": false,
 		"crown": false,
         "image": "spinningcat.jpg"
