@@ -15,10 +15,10 @@
     },
     {
         "name": "daemon",
-        "description": "привет, я люблю водку.",
+        "description": "I was the stripper at Vikingr's party",
         "website": false,
 		"crown": true,
-        "image": "russian_daemon.jpg"
+        "image": "daemon.jpg"
     },
     {
         "name": "emerson",
