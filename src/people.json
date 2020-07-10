@@ -231,6 +231,13 @@
         "image": "faylite.jpg"
     },
     {
+        "name": "khobo",
+        "description": "Got any change to spare?",
+        "website": false,
+		"crown": false,
+        "image": "khobo.jpg"
+    },
+    {
         "name": "bango2",
         "description": "The quieter you become, the more you are able to hear",
         "website": false,
