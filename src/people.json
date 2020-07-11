@@ -271,5 +271,12 @@
         "website": "http://i.viking.sh/18-stripper/",
 		"crown": false,
         "image": "stripper.jpg"
+	},
+	{
+		"name": "spynxic",
+		"description": "How did I end up here?",
+        "website": false,
+		"crown": false,
+        "image": "spynxic.jpg"
 	}
 ]
