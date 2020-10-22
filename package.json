@@ -6,7 +6,9 @@
 	"scripts": {
 		"start": "webpack-dev-server --mode=development",
 		"build": "webpack --mode=development",
-		"compile": "webpack --mode=production"
+		"compile": "webpack --mode=production",
+		"lint": "yarn lint:eslint",
+		"lint:eslint": "eslint *.config.js src/ --report-unused-disable-directives"
 	},
 	"repository": {
 		"type": "git",
