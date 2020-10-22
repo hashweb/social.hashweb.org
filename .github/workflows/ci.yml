@@ -1,0 +1,79 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches:
+      - develop
+      - feature/*
+
+env:
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+  FONTAWESOME_TOKEN: ${{ secrets.FONTAWESOME_TOKEN }}
+
+jobs:
+  prepare:
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        node-version: ['14']
+    name: "[v${{ matrix.node-version }}] prepare"
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Cache node_modules
+        id: cache-node_modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node_modules-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-node_modules-
+            ${{ runner.os }}-
+
+      - name: Install dependencies
+        if: steps.cache-node_modules.outputs.cache-hit != 'true'
+        run: |
+          yarn install --frozen-lockfile
+
+  check:
+    runs-on: ubuntu-20.04
+    needs: prepare
+    strategy:
+      matrix:
+        node-version: ['14']
+    name: "[v${{ matrix.node-version }}] check"
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Cache node_modules
+        id: cache-node_modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node_modules-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-node_modules-
+            ${{ runner.os }}-
+
+      - name: Install dependencies
+        if: steps.cache-node_modules.outputs.cache-hit != 'true'
+        run: |
+          yarn install --frozen-lockfile
+
+      - name: Lint
+        run: |
+          yarn lint
