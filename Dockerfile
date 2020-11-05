@@ -1,8 +1,3 @@
-# image used for the healthcheck binary
-FROM golang:1.15-buster AS gobuilder
-COPY healthcheck/ /go/src/healthcheck/
-RUN CGO_ENABLED=0 go build -ldflags '-w -s -extldflags "-static"' -o /healthcheck /go/src/healthcheck/
-
 # -- BUILD STAGE --------------------------------
 FROM node:lts-slim AS build
 
@@ -28,7 +23,7 @@ FROM gcr.io/distroless/nodejs:14
 WORKDIR /app
 
 # copy in our healthcheck binary
-COPY --from=gobuilder --chown=nonroot /healthcheck /healthcheck
+COPY --from=ghcr.io/bratteng/healthcheck-next:latest --chown=nonroot /healthcheck /healthcheck
 
 COPY --chown=nonroot --from=build /src/package.json /app/package.json
 COPY --chown=nonroot --from=build /src/node_modules /app/node_modules
