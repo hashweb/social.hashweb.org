@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 const isProd =
 	process.env.NODE_ENV === 'production' && process.env.APP_ENV !== 'staging'
 

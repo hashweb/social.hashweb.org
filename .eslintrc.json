@@ -1,7 +1,23 @@
 {
+	"root": true,
+	"parser": "babel-eslint",
+	"parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2021,
+        "sourceType": "module"
+    },
+	"plugins": [
+        "react",
+		"react-hooks",
+		"prettier",
+		"@next/eslint-plugin-next"
+    ],
     "env": {
         "browser": true,
-        "es6": true
+		"es6": true,
+		"node": true
     },
     "extends": [
         "eslint:recommended",
@@ -9,23 +25,9 @@
 		"plugin:@next/eslint-plugin-next/recommended",
 		"plugin:prettier/recommended"
     ],
-    "parser": "babel-eslint",
     "globals": {
 		"global": true
 	},
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 2020,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react",
-		"prettier",
-		"react-hooks",
-		"@next/eslint-plugin-next"
-    ],
     "settings": {
         "react": {
             "version": "detect"
