@@ -31,9 +31,6 @@ const Github = styled.a`
 	color: white;
 	font-size: 3rem;
 	height: 65px;
-	/* position: absolute; */
-	/* right: 16px; */
-	/* top: 0; */
 
 	span {
 		border: 0;
@@ -55,7 +52,7 @@ const Header = ({ title }) => {
 		<StyledHeader>
 			<ToggleTheme darkMode={darkMode} />
 			<Title>
-				<Hashtag icon={['far', 'hashtag']} fixedWidth />
+				<Hashtag />
 				{title}
 			</Title>
 

@@ -42,7 +42,7 @@ const Icons = styled.div`
 `
 
 const WebsiteIcon = styled(FontAwesomeIcon)`
-	color: #673ab7;
+	color: ${(props) => props.theme.colors.red};
 
 	&:hover {
 		cursor: pointer;

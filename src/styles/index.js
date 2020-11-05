@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
 
 html,
 body,
-#__next { height: 100%; }
+#__next { min-height: 100%; }
 
 * {
 	box-sizing: border-box;
@@ -45,8 +45,6 @@ body {
 		font-feature-settings: "liga";
 	}
 
-	--red: ${darkTheme.colors.red};
-
 	&.dark-mode {
 		--global-background-color: ${darkTheme.colors.background};
 		--global-font-color: ${darkTheme.colors.font};
@@ -62,37 +60,42 @@ body {
 
 
 svg:not(:root).svg-inline--fa{overflow:visible;}
-.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-0.125em;}
-${
-	'' /* .svg-inline--fa.fa-lg{vertical-align:-0.225em;}
-.svg-inline--fa.fa-w-1{width:0.0625em;}
-.svg-inline--fa.fa-w-2{width:0.125em;}
-.svg-inline--fa.fa-w-3{width:0.1875em;}
-.svg-inline--fa.fa-w-4{width:0.25em;}
-.svg-inline--fa.fa-w-5{width:0.3125em;}
-.svg-inline--fa.fa-w-6{width:0.375em;}
-.svg-inline--fa.fa-w-7{width:0.4375em;}
-.svg-inline--fa.fa-w-8{width:0.5em;}
-.svg-inline--fa.fa-w-9{width:0.5625em;}
-.svg-inline--fa.fa-w-10{width:0.625em;}
-.svg-inline--fa.fa-w-11{width:0.6875em;}
-.svg-inline--fa.fa-w-12{width:0.75em;}
-.svg-inline--fa.fa-w-13{width:0.8125em;}
-.svg-inline--fa.fa-w-14{width:0.875em;}
-.svg-inline--fa.fa-w-15{width:0.9375em;}
-.svg-inline--fa.fa-w-16{width:1em;}
-.svg-inline--fa.fa-w-17{width:1.0625em;}
-.svg-inline--fa.fa-w-18{width:1.125em;}
-.svg-inline--fa.fa-w-19{width:1.1875em;}
-.svg-inline--fa.fa-w-20{width:1.25em;}
-.svg-inline--fa.fa-pull-left{margin-right:0.3em;width:auto;}
-.svg-inline--fa.fa-pull-right{margin-left:0.3em;width:auto;}
-.svg-inline--fa.fa-border{height:1.5em;}
-.svg-inline--fa.fa-li{width:2em;} */
-}
-.svg-inline--fa.fa-fw{width:1.25em;}
+.svg-inline--fa{
+	display:inline-block;
+	font-size:inherit;
+	height:1em;
+	overflow:visible;
+	vertical-align:-0.125em;
 
-${'' /* ${dom.css()} */}
+	.fa-primary {
+		fill: var(--fa-primary-color, currentColor);
+		opacity: var(--fa-primary-opacity, 1);
+	}
+
+	.fa-secondary {
+		fill: var(--fa-secondary-color, currentColor);
+		opacity: var(--fa-secondary-opacity, 0.4);
+	}
+
+	&.fa-swap-opacity {
+		.fa-primary {
+			opacity: var(--fa-primary-opacity, 0.4);
+		}
+
+		.fa-secondary {
+			opacity: var(--fa-primary-opacity, 1);
+		}
+	}
+
+	&.fa-fw{width:1.25em;}
+
+	mask {
+		.fa-primary,
+		.fa-secondary {
+			fill: black;
+		}
+	}
+}
 `
 
 export { GlobalStyle, lightTheme, darkTheme }
