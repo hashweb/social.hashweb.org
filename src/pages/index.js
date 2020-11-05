@@ -1,5 +1,3 @@
-import React from 'react'
-
 import Main from 'components/layout/Main'
 import Header from 'components/layout/Header'
 import Avatar from 'components/layout/Avatar'
