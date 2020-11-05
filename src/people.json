@@ -42,13 +42,6 @@
         "image": "anna.jpg"
     },
     {
-        "name": "fran__",
-        "description": "<!-- no comment -->",
-        "website": false,
-		"crown": false,
-        "image": "fran__.jpg"
-    },
-    {
         "name": "Natasha",
         "description": "Our beloved Natasha",
         "website": false,
@@ -258,20 +251,6 @@
 		"crown": false,
         "image": "rhelic.jpg"
     },
-    {
-        "name": "MassDebates",
-        "description": "Australia is the New Jersey of England",
-        "website": false,
-		"crown": false,
-        "image": "MassDebates.jpg"
-	},
-	{
-		"name": "Vikingr's stripper",
-		"description": "I stripped at Vikingr's 18th birthday.",
-        "website": "http://i.viking.sh/18-stripper/",
-		"crown": false,
-        "image": "stripper.jpg"
-	},
 	{
 		"name": "spynxic",
 		"description": "How did I end up here?",
