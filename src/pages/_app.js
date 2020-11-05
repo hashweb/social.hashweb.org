@@ -21,13 +21,11 @@ import Head from 'next/head'
 // Context
 import AppProvider from 'contexts/app'
 
-// Components
-import Layout from 'components/layout/Layout'
-
 const App = ({ Component, pageProps }) => {
 	return (
 		<>
 			<Head>
+				<title>#web-social Hall of (f/sh)ame</title>
 				<meta charSet="UTF-8" />
 				<meta
 					name="description"
@@ -67,9 +65,7 @@ const App = ({ Component, pageProps }) => {
 				<meta name="theme-color" content="#ffffff" />
 			</Head>
 			<AppProvider>
-				<Layout siteTitle="#web-social Hall of (f/sh)ame">
-					<Component {...pageProps} />
-				</Layout>
+				<Component {...pageProps} />
 			</AppProvider>
 		</>
 	)
