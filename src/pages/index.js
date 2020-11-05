@@ -8,9 +8,9 @@ const Index = () => {
 		<>
 			<Header title="web-social Hall of (f/sh)ame & majestic beards" />
 			<Main>
-				{people.map((person, key) => {
-					return <Avatar key={key} {...person} />
-				})}
+				{people.map((person, key) => (
+					<Avatar key={key} {...person} />
+				))}
 			</Main>
 		</>
 	)
