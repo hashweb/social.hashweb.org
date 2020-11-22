@@ -23,13 +23,13 @@ FROM gcr.io/distroless/nodejs:14
 WORKDIR /app
 
 # copy in our healthcheck binary
-COPY --from=ghcr.io/bratteng/healthcheck-next:latest --chown=nonroot /healthcheck /healthcheck
+COPY --from=ghcr.io/bratteng/healthcheck-next:latest /healthcheck /healthcheck
 
-COPY --chown=nonroot --from=build /src/package.json /app/package.json
-COPY --chown=nonroot --from=build /src/node_modules /app/node_modules
-COPY --chown=nonroot --from=build /src/.next /app/.next
-COPY --chown=nonroot --from=build /src/public /app/public
-COPY --chown=nonroot --from=build /src/next.config.js /app/next.config.js
+COPY --from=build /src/package.json /app/package.json
+COPY --from=build /src/node_modules /app/node_modules
+COPY --from=build /src/.next /app/.next
+COPY --from=build /src/public /app/public
+COPY --from=build /src/next.config.js /app/next.config.js
 
 # default next.js port
 EXPOSE 3000
