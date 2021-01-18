@@ -35,10 +35,6 @@
   name: ":mega: feedback"
   color: "03a9f4"
   description: ""
-- # future maybe
-  name: ":rocket: future maybe"
-  color: "fef2c0"
-  description: ""
 - # good first issue
   name: ":hatching_chick: good first issue"
   color: "7057ff"
