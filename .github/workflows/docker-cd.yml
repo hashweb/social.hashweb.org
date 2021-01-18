@@ -27,7 +27,7 @@ jobs:
         name: Prepare
         id: prep
         run: |
-          DOCKER_IMAGE=ghcr.io/ombratteng/social.hashweb.org
+          DOCKER_IMAGE=ghcr.io/hashweb/social.hashweb.org
           VERSION=latest
           if [[ $GITHUB_REF == refs/tags/* ]]; then
             VERSION=${GITHUB_REF#refs/tags/}
@@ -64,7 +64,7 @@ jobs:
         with:
           push: true
           tags: ${{ steps.prep.outputs.tags }}
-          cache-from: ghcr.io/ombratteng/social.hashweb.org:latest
+          cache-from: ghcr.io/hashweb/social.hashweb.org:latest
           build-args: |
             NPM_TOKEN=${{ secrets.NPM_TOKEN }}
             FONTAWESOME_TOKEN=${{ secrets.FONTAWESOME_TOKEN }}
