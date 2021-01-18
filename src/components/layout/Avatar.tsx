@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
+import getConfig from 'next/config'
+const { publicRuntimeConfig } = getConfig()
+const { assetPrefix } = publicRuntimeConfig
 
 const Figure = styled.figure`
 	margin: 0;
@@ -63,7 +66,7 @@ const Avatar = ({
 	return (
 		<Figure>
 			<Image
-				src={`/avatars/${image}`}
+				src={`${assetPrefix}/avatars/${image}`}
 				alt={name}
 				width="280"
 				height="280"
