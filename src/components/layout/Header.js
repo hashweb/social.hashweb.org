@@ -57,7 +57,7 @@ const Header = ({ title }) => {
 			</Title>
 
 			<Github
-				href="https://github.com/omBratteng/social.hashweb.org"
+				href="https://github.com/hashweb/social.hashweb.org"
 				target="_blank"
 				alt="GitHub repo"
 				rel="noopener noreferrer"
