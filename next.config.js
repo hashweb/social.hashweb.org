@@ -21,7 +21,7 @@ module.exports = {
 		]
 	},
 	images: {
-		domains: [assetPrefix],
+		domains: [new URL(assetPrefix).hostname],
 	},
 	serverRuntimeConfig: {},
 	publicRuntimeConfig: {
