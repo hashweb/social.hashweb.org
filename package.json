@@ -26,6 +26,18 @@
     "lint": "yarn lint:eslint",
     "lint:eslint": "eslint *.config.js src/ --report-unused-disable-directives"
   },
+  "browserslist": [
+    "defaults",
+    "> 0.5%",
+    "last 2 versions",
+    "not dead",
+    "not IE 11",
+    "not kaios 2.5",
+    "not baidu 7.12",
+    "not and_qq 10.4",
+    "not and_uc 12.12",
+    "not op_mini all"
+  ],
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-brands-svg-icons": "^5.15.2",
