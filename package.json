@@ -45,7 +45,6 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@react-aria/focus": "^3.2.3",
     "@react-aria/interactions": "^3.3.2",
-    "core-js": "^3.8.2",
     "css-in-js-media": "^1.0.15",
     "next": "^10.0.5",
     "polished": "^4.1.0",
