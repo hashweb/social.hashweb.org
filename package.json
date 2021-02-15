@@ -58,7 +58,7 @@
     "@babel/preset-env": "^7.12.13",
     "@babel/preset-react": "^7.12.13",
     "@next/eslint-plugin-next": "^10.0.6",
-    "@types/node": "^14.14.25",
+    "@types/node": "^14.14.28",
     "@types/react": "^17.0.1",
     "@types/react-dom": "^17.0.0",
     "@types/styled-components": "^5.1.7",
