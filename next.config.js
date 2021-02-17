@@ -1,7 +1,8 @@
 const isProd =
 	process.env.NODE_ENV === 'production' && process.env.APP_ENV !== 'staging'
 
-const assetPrefix = isProd ? 'https://socialhashweb.b-cdn.net' : ''
+const CDN = 'https://socialhashweb.b-cdn.net'
+const assetPrefix = isProd ? CDN : ''
 
 module.exports = {
 	reactStrictMode: false,
@@ -21,7 +22,7 @@ module.exports = {
 		]
 	},
 	images: {
-		domains: [new URL(assetPrefix).hostname],
+		domains: [new URL(CDN).hostname],
 	},
 	serverRuntimeConfig: {},
 	publicRuntimeConfig: {
