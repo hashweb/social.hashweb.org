@@ -44,7 +44,7 @@
     "@fortawesome/pro-duotone-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@react-aria/focus": "^3.2.3",
-    "@react-aria/interactions": "^3.3.2",
+    "@react-aria/interactions": "^3.4.0",
     "css-in-js-media": "^1.0.15",
     "next": "^10.0.7",
     "polished": "^4.1.1",
