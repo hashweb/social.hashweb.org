@@ -51,10 +51,13 @@ body {
 	font-variant-ligatures: common-ligatures;
 	line-height: ${(props) => props.theme.font.lineHeight};
 	margin: 0;
-	transition: background 0.5s ease, color 0.5s ease;
 
 	@supports not (font-variant-ligatures: common-ligatures) {
 		font-feature-settings: "liga";
+	}
+
+	&[initialised] {
+		transition: background 0.5s ease, color 0.5s ease;
 	}
 }
 
