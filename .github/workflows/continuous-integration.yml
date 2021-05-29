@@ -1,7 +1,7 @@
 name: continuous-integration
 
 on:
-  pull_request:
+  pull_request_target:
   push:
     branches:
       - develop
@@ -17,8 +17,17 @@ jobs:
     name: Prepare
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      -
+        if: ${{ github.actor == 'dependabot[bot]' }}
+        name: Checkout code
+        uses: actions/checkout@v2.3.4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      -
+        if: ${{ github.actor != 'dependabot[bot]' }}
+        name: Checkout code
+        uses: actions/checkout@v2.3.4
 
       - name: Use Node.js 14
         uses: actions/setup-node@v2
@@ -46,8 +55,17 @@ jobs:
     name: Check
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      -
+        if: ${{ github.actor == 'dependabot[bot]' }}
+        name: Checkout code
+        uses: actions/checkout@v2.3.4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      -
+        if: ${{ github.actor != 'dependabot[bot]' }}
+        name: Checkout code
+        uses: actions/checkout@v2.3.4
 
       - name: Use Node.js 14
         uses: actions/setup-node@v2
@@ -79,8 +97,17 @@ jobs:
     name: Build
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      -
+        if: ${{ github.actor == 'dependabot[bot]' }}
+        name: Checkout code
+        uses: actions/checkout@v2.3.4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      -
+        if: ${{ github.actor != 'dependabot[bot]' }}
+        name: Checkout code
+        uses: actions/checkout@v2.3.4
 
       - name: Use Node.js 14
         uses: actions/setup-node@v2
@@ -117,4 +144,4 @@ jobs:
         run: |
           yarn start &
           sleep 5
-          curl http://localhost:3000/api/_health > /dev/null
+          curl --silent --fail http://localhost:3000/api/_health
