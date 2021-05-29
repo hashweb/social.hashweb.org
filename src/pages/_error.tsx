@@ -28,8 +28,8 @@ const Content = styled.div`
 `
 
 const Main = styled.main`
-	font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI',
-		'Fira Sans', Avenir, 'Helvetica Neue', 'Lucida Grande', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', 'Fira Sans', Avenir, 'Helvetica Neue', 'Lucida Grande',
+		sans-serif;
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -53,10 +53,7 @@ const statusCodes: { [code: number]: string } = {
 
 const Error = ({ statusCode, ...props }: ErrorProps): JSX.Element => {
 	statusCode = statusCode || 0
-	const title =
-		props.title ||
-		statusCodes[statusCode] ||
-		'An unexpected error has occurred'
+	const title = props.title || statusCodes[statusCode] || 'An unexpected error has occurred'
 
 	return (
 		<>
@@ -76,12 +73,8 @@ const Error = ({ statusCode, ...props }: ErrorProps): JSX.Element => {
 	)
 }
 
-Error.getInitialProps = async ({
-	res,
-	err,
-}: NextPageContext): Promise<ErrorProps> => {
-	const statusCode =
-		res && res.statusCode ? res.statusCode : err ? err.statusCode : 404
+Error.getInitialProps = async ({ res, err }: NextPageContext): Promise<ErrorProps> => {
+	const statusCode = res && res.statusCode ? res.statusCode : err ? err.statusCode : 404
 
 	return {
 		statusCode,

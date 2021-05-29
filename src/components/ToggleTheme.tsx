@@ -18,12 +18,7 @@ const Button = styled.button<Button>`
 	${size('3rem')}
 	align-items: center;
 	align-self: center;
-	background: var(
-		${(props) =>
-			props.isHovered || props.isFocused
-				? '--global-font-color'
-				: '--global-link-color'}
-	);
+	background: var(${(props) => (props.isHovered || props.isFocused ? '--global-font-color' : '--global-link-color')});
 	border: 0;
 	border-radius: 100%;
 	color: var(--global-background-color);
@@ -51,9 +46,7 @@ const ToggleTheme = (): JSX.Element => {
 	const { theme, setTheme } = useApp()
 
 	useEffect(() => {
-		isHovered || isFocused
-			? setIcon(theme ? 'lightbulb-on' : 'lightbulb-slash')
-			: setIcon('lightbulb')
+		isHovered || isFocused ? setIcon(theme ? 'lightbulb-on' : 'lightbulb-slash') : setIcon('lightbulb')
 	}, [isFocused, isHovered, setIcon, theme])
 
 	return (

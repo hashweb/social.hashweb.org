@@ -8,28 +8,18 @@
 		},
 		"sourceType": "module",
 		"project": "./tsconfig.json",
-		"warnOnUnsupportedTypeScriptVersion": false
+		"warnOnUnsupportedTypeScriptVersion": true
 	},
 	"plugins": [
 		"@typescript-eslint",
 		"react",
 		"react-hooks",
-		"prettier",
 		"@next/eslint-plugin-next"
 	],
-	"env": {
-		"browser": true,
-		"es6": true,
-		"node": true
-	},
 	"extends": [
 		"plugin:@typescript-eslint/recommended",
-		"plugin:react/recommended",
-		"plugin:@next/eslint-plugin-next/recommended",
-		"prettier",
-		"prettier/react",
-		"prettier/@typescript-eslint",
-		"plugin:prettier/recommended"
+		"plugin:prettier/recommended",
+		"next"
 	],
 	"globals": {
 		"global": true
@@ -49,15 +39,10 @@
 				"tabWidth": 4,
 				"trailingComma": "all",
 				"useTabs": true,
-				"pageWidth": 80
+				"printWidth": 127
 			}
 		],
-		"react-hooks/rules-of-hooks": "error",
-		"react-hooks/exhaustive-deps": "warn",
-		"react/jsx-uses-react": "off",
-		"react/react-in-jsx-scope": "off",
 		"@typescript-eslint/type-annotation-spacing": "error",
-		"@typescript-eslint/no-empty-function": "off",
-		"@next/next/no-css-tags": "off"
+		"@typescript-eslint/no-empty-function": "off"
 	}
 }

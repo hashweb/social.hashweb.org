@@ -6,9 +6,7 @@ import process from 'process'
 const isDev = process.env.NODE_ENV === 'development'
 
 export default class Doc extends Document {
-	static async getInitialProps(
-		context: DocumentContext,
-	): Promise<DocumentInitialProps> {
+	static async getInitialProps(context: DocumentContext): Promise<DocumentInitialProps> {
 		const sheet = new ServerStyleSheet()
 		const originalRenderPage = context.renderPage
 

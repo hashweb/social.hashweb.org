@@ -22,9 +22,6 @@ const globalLinks: Links = [
 	},
 ]
 
-const links: Links = [
-	...(process.env.NODE_ENV === 'development' ? devLinks : prodLinks),
-	...globalLinks,
-]
+const links: Links = [...(process.env.NODE_ENV === 'development' ? devLinks : prodLinks), ...globalLinks]
 
 export default links

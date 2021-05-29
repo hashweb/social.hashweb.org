@@ -1,5 +1,4 @@
-const isProd =
-	process.env.NODE_ENV === 'production' && process.env.APP_ENV !== 'staging'
+const isProd = process.env.NODE_ENV === 'production' && process.env.APP_ENV !== 'staging'
 
 const CDN = 'https://socialhashweb.b-cdn.net'
 const assetPrefix = isProd ? CDN : ''

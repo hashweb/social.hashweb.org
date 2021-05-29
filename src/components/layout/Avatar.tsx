@@ -53,42 +53,20 @@ interface Props {
 	description: string
 }
 
-const Avatar = ({
-	name,
-	image,
-	crown,
-	website,
-	description,
-}: Props): JSX.Element => {
-	const openWebsite = () =>
-		window.open(website, '_blank', 'noopener noreferrer')
+const Avatar = ({ name, image, crown, website, description }: Props): JSX.Element => {
+	const openWebsite = () => window.open(website, '_blank', 'noopener noreferrer')
 
 	return (
 		<Figure>
-			<Image
-				src={`${assetPrefix}/avatars/${image}`}
-				alt={name}
-				width="280"
-				height="280"
-			/>
+			<Image src={`${assetPrefix}/avatars/${image}`} alt={name} width="280" height="280" />
 
 			<Caption>
 				<Name>{name}</Name>
 
 				{(website || crown) && (
 					<Icons>
-						{website && (
-							<WebsiteIcon
-								icon={['fad', 'link']}
-								onClick={openWebsite}
-							/>
-						)}
-						{crown && (
-							<FontAwesomeIcon
-								icon={['fad', 'crown']}
-								color="gold"
-							/>
-						)}
+						{website && <WebsiteIcon icon={['fad', 'link']} onClick={openWebsite} />}
+						{crown && <FontAwesomeIcon icon={['fad', 'crown']} color="gold" />}
 					</Icons>
 				)}
 				<Description>{description}</Description>
