@@ -2,7 +2,7 @@ import type { NextPageContext } from 'next'
 import Head from 'next/head'
 import styled from 'styled-components'
 
-import Header from 'components/layout/Header'
+import { Header } from 'components'
 
 const H1 = styled.h1`
 	border-right: 1px solid rgba(0, 0, 0, 0.3);

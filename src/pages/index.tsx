@@ -1,8 +1,6 @@
 import type { GetServerSideProps } from 'next'
 
-import Main from 'components/layout/Main'
-import Header from 'components/layout/Header'
-import Avatar from 'components/layout/Avatar'
+import { Avatar, Header, Main } from 'components'
 import people from 'people.json'
 
 const Index = (): JSX.Element => {

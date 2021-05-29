@@ -1,4 +1,2 @@
-import googleFonts from './googleFonts'
-import preload from './preload'
-
-export { googleFonts, preload }
+export { default as googleFonts } from './googleFonts'
+export { default as preload } from './preload'

@@ -14,7 +14,7 @@ library.add(faCrown, faLightbulb, faLightbulbOn, faLightbulbSlash, faLink)
 import Head from 'next/head'
 
 // Context
-import AppProvider from 'contexts/app'
+import { AppProvider } from 'contexts'
 
 import { preload } from 'utils'
 import links from 'links'
