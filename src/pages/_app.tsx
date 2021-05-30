@@ -16,9 +16,6 @@ import Head from 'next/head'
 // Context
 import { AppProvider } from 'contexts'
 
-import { preload } from 'utils'
-import links from 'links'
-
 const App = ({ Component, pageProps }: AppProps): JSX.Element => {
 	return (
 		<>
@@ -26,7 +23,6 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
 				<title>#web-social Hall of (f/sh)ame</title>
 				<meta name="description" content="#web-social Hall of (f/sh)ame &amp; majestic beards" />
 				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-				{preload({ links })}
 				<meta httpEquiv="X-UA-Compatible" content="ie=edge" />
 				<meta name="apple-mobile-web-app-capable" content="yes" />
 

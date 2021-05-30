@@ -9,17 +9,6 @@ import { dark, light } from 'styles/themes'
 
 const GlobalStyle = createGlobalStyle`
 :root {
-	box-sizing: border-box;
-	font-family: 'Fira Code', monospace;
-	font-size: 16px;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	font-style: normal;
-	font-weight: 400;
-	-ms-overflow-style: -ms-autohiding-scrollbar;
-	text-rendering: optimizeLegibility;
-	text-size-adjust: 100%;
-
 	--global-background-color: ${light.colors.background};
 	--global-font-color: ${light.colors.font};
 	--global-link-color: ${light.colors.linkColor};
@@ -29,6 +18,20 @@ const GlobalStyle = createGlobalStyle`
 	--global-background-color: ${dark.colors.background};
 	--global-font-color: ${dark.colors.font};
 	--global-link-color: ${dark.colors.linkColor};
+}
+
+html {
+	box-sizing: border-box;
+	font-family: 'Fira Code', monospace;
+	font-size: 16px;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 1px;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	text-rendering: optimizeLegibility;
+	text-size-adjust: 100%;
 }
 
 html,

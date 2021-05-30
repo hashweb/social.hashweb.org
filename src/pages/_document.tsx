@@ -1,9 +1,6 @@
 import type { DocumentContext, DocumentInitialProps } from 'next/document'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet, StyleSheetManager } from 'styled-components'
-import process from 'process'
-
-const isDev = process.env.NODE_ENV === 'development'
 
 export default class Doc extends Document {
 	static async getInitialProps(context: DocumentContext): Promise<DocumentInitialProps> {
@@ -15,7 +12,7 @@ export default class Doc extends Document {
 				originalRenderPage({
 					enhanceApp: (App) => (props) =>
 						sheet.collectStyles(
-							<StyleSheetManager disableVendorPrefixes={isDev}>
+							<StyleSheetManager>
 								<App {...props} />
 							</StyleSheetManager>,
 						),
@@ -39,7 +36,19 @@ export default class Doc extends Document {
 	render(): JSX.Element {
 		return (
 			<Html lang="en">
-				<Head />
+				<Head>
+					{process.env.NODE_ENV === 'development' ? (
+						<link
+							rel="stylesheet"
+							href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap"
+						/>
+					) : (
+						<link
+							rel="stylesheet"
+							href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=optional"
+						/>
+					)}
+				</Head>
 				<body>
 					<script
 						dangerouslySetInnerHTML={{
