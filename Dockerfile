@@ -1,5 +1,5 @@
 # -- BUILD STAGE --------------------------------
-FROM node:lts-slim AS build
+FROM node:14.17.4 AS build
 
 WORKDIR /src
 
