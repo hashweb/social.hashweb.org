@@ -26,7 +26,7 @@ RUN rm -rf .next/cache
 
 # -- RUNTIME STAGE --------------------------------
 
-FROM gcr.io/distroless/nodejs:14
+FROM gcr.io/distroless/nodejs:16
 
 WORKDIR /app
 
