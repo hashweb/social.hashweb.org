@@ -13,13 +13,18 @@ ENV NEXT_TELEMETRY_DISABLED=1
 COPY package.json ./
 COPY yarn.lock ./
 COPY .npmrc ./
+RUN yarn install --frozen-lockfile
+
 COPY next-env.d.ts ./
 COPY next.config.js ./
+
+RUN npx next telemetry disable > /dev/null
+
 COPY tsconfig.json ./
 COPY babel.config.js ./
 COPY src ./src/
 COPY public ./public/
-RUN yarn install --frozen-lockfile
+
 RUN yarn build
 RUN yarn install --production
 RUN rm -rf .next/cache
