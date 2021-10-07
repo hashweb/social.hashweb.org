@@ -27,6 +27,8 @@ const nextConfig = {
 		]
 	},
 	images: {
+		loader: 'custom',
+		deviceSizes: [140, 210, 230, 250, 280],
 		domains: [new URL(CDN).hostname],
 	},
 	serverRuntimeConfig: {},

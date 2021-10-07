@@ -1,9 +1,8 @@
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
-import getConfig from 'next/config'
-const { publicRuntimeConfig } = getConfig()
-const { assetPrefix } = publicRuntimeConfig
+
+import imgixLoader from 'imgixLoader'
 
 const Figure = styled.figure`
 	margin: 0;
@@ -58,7 +57,7 @@ const Avatar = ({ name, image, crown, website, description }: Props): JSX.Elemen
 
 	return (
 		<Figure>
-			<Image src={`${assetPrefix}/avatars/${image}`} alt={name} width="280" height="280" />
+			<Image layout="responsive" loader={imgixLoader} src={`avatars/${image}`} alt={name} width="280" height="280" />
 
 			<Caption>
 				<Name>{name}</Name>
