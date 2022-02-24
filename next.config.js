@@ -13,6 +13,9 @@ const nextConfig = {
 	reactStrictMode: false,
 	poweredByHeader: false,
 	assetPrefix,
+	experimental: {
+		outputStandalone: true,
+	},
 	async headers() {
 		return [
 			{
