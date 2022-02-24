@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 import media from 'css-in-js-media'
 
 const Main = styled.main`

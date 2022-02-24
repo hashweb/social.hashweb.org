@@ -1,7 +1,7 @@
 import { createContext } from 'react'
-import { ThemeProvider } from 'styled-components'
+import { Global, ThemeProvider } from '@emotion/react'
 
-import { GlobalStyle, light, dark } from 'styles'
+import { light, dark, appGlobalStyles } from 'styles'
 
 import useTheme, { IUseTheme } from 'hooks/useTheme'
 
@@ -19,7 +19,7 @@ const AppProvider = ({ children }: Props): JSX.Element => {
 	return (
 		<AppContext.Provider value={{ theme, setTheme }}>
 			<ThemeProvider theme={theme ? dark : light}>
-				<GlobalStyle />
+				<Global styles={appGlobalStyles(theme ? dark : light)} />
 				{children}
 			</ThemeProvider>
 		</AppContext.Provider>

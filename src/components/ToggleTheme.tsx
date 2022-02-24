@@ -1,7 +1,7 @@
 import type { IconName } from '@fortawesome/fontawesome-svg-core'
 
 import { useState, useEffect } from 'react'
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { size } from 'polished'
 import { useHover } from '@react-aria/interactions'

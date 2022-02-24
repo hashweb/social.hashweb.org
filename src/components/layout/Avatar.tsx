@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 
@@ -47,17 +47,26 @@ const WebsiteIcon = styled(FontAwesomeIcon)`
 interface Props {
 	name: string
 	image: string
+	aboveFold: boolean
 	crown?: boolean
 	website?: string
 	description: string
 }
 
-const Avatar = ({ name, image, crown, website, description }: Props): JSX.Element => {
+const Avatar = ({ name, image, aboveFold, crown, website, description }: Props): JSX.Element => {
 	const openWebsite = () => window.open(website, '_blank', 'noopener noreferrer')
 
 	return (
 		<Figure>
-			<Image layout="responsive" loader={imgixLoader} src={`avatars/${image}`} alt={name} width="280" height="280" />
+			<Image
+				layout="responsive"
+				priority={aboveFold}
+				loader={imgixLoader}
+				src={`avatars/${image}`}
+				alt={name}
+				width="280"
+				height="280"
+			/>
 
 			<Caption>
 				<Name>{name}</Name>

@@ -9,7 +9,7 @@ const Index = (): JSX.Element => {
 			<Header title="web-social Hall of (f/sh)ame &amp; majestic beards" />
 			<Main>
 				{people.map((person, key) => (
-					<Avatar key={key} {...person} />
+					<Avatar aboveFold={key <= 9} key={key} {...person} />
 				))}
 			</Main>
 		</>
