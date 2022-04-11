@@ -20,14 +20,14 @@ jobs:
       -
         if: ${{ github.actor == 'dependabot[bot]' }}
         name: Checkout code
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v3.0.0
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
       -
         if: ${{ github.actor != 'dependabot[bot]' }}
         name: Checkout code
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v3.0.0
 
       - name: Use Node.js 14
         uses: actions/setup-node@v2
@@ -58,14 +58,14 @@ jobs:
       -
         if: ${{ github.actor == 'dependabot[bot]' }}
         name: Checkout code
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v3.0.0
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
       -
         if: ${{ github.actor != 'dependabot[bot]' }}
         name: Checkout code
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v3.0.0
 
       - name: Use Node.js 14
         uses: actions/setup-node@v2
@@ -100,14 +100,14 @@ jobs:
       -
         if: ${{ github.actor == 'dependabot[bot]' }}
         name: Checkout code
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v3.0.0
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
       -
         if: ${{ github.actor != 'dependabot[bot]' }}
         name: Checkout code
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v3.0.0
 
       - name: Use Node.js 14
         uses: actions/setup-node@v2
