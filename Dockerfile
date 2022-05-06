@@ -28,7 +28,7 @@ RUN yarn build
 
 # -- RUNTIME STAGE --------------------------------
 
-FROM gcr.io/distroless/nodejs:16
+FROM gcr.io/distroless/nodejs:18
 
 WORKDIR /app
 
