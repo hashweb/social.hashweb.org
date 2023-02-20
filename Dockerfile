@@ -1,5 +1,5 @@
 # -- BUILD STAGE --------------------------------
-FROM node:16.14.0 AS build
+FROM node:19.6.1 AS build
 
 WORKDIR /src
 
